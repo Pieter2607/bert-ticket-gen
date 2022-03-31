@@ -9,3 +9,7 @@ website = Flask(__name__)
 @website.route('/')
 def index():
     return render_template('index.html')
+
+@website.route('/ticket/get')
+def get_ticket():
+    return render_template('get_ticket.html')
